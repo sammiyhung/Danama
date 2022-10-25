@@ -1,0 +1,226 @@
+/**********Background**********/
+
+
+#Loader{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid black;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+body::before{
+
+  content:"";
+  display: table;
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  animation: loader 3s 1;
+}
+
+@keyframes loader{
+  0%{
+    background-color: white;
+  }
+  25%{
+    background-color: white;
+  }
+  50%{
+    background-color: white;
+  }
+  75%{
+    background-color: white;
+  }
+  100%{
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-image: url(/img/12742271_799864780160291_1528343774851167049_n.jpg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-animation: bg-slide 5s infinite;
+  animation: bg-slide 5s infinite;
+  font-family: monospace;
+}
+
+@-webkit-keyframes bg-slide {
+  0%{
+    background-position: -10px;
+  }
+  50%{
+    background-position: 10px;
+  }
+  100%{
+    background-position: -10px;
+  }
+}
+
+@keyframes bg-slide {
+  0%{
+    background-position: -10px;
+  }
+  50%{
+    background-position: 10px;
+  }
+  100%{
+    background-position: -10px;
+  }
+}
+
+
+
+/*********Header***********/
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+}
+
+.colour{
+  background-color: darkred;
+  color: white;
+  border: 1px solid whitesmoke;
+}
+
+.colour:hover{
+  background-color: darkblue;
+  color: white;
+  border: 1px solid whitesmoke;
+}
+
+h1::after{
+  content: "";
+  display: table;
+  border: 2px solid red;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  left: 35%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+h3 a{
+  text-decoration: none;
+  color: white;
+}
+
+h3 a:hover{
+  color: blue;
+  -webkit-animation: hover 0.3s 1 both;
+  animation: hover 0.3s 1 both;
+}
+
+@-webkit-keyframes hover{
+  0%{
+    color: white;
+  }
+  100%{
+    color: blue;
+  }
+}
+
+@keyframes hover{
+  0%{
+    color: white;
+  }
+  100%{
+    color: blue;
+  }
+}
+
+#arrow-right{
+  -webkit-animation: shift 1s infinite;;
+  animation: shift 1s infinite;
+}
+
+@-webkit-keyframes shift{
+  0%{
+    position: relative;
+    left: 0px;
+  }
+  50%{
+    position: relative;
+    left: 5px;
+  }
+  100%{
+    position: relative;
+    left: 0px;
+  }
+}
+
+@keyframes shift{
+  0%{
+    position: relative;
+    left: 0px;
+  }
+  50%{
+    position: relative;
+    left: 5px;
+  }
+  100%{
+    position: relative;
+    left: 0px;
+  }
+}
+
+.cover-container {
+  max-width: 42em;
+}
+

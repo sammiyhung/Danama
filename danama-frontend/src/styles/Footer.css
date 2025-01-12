@@ -1,0 +1,53 @@
+/* Footer.css */
+footer {
+  background-color: #222; /* Dark background for the footer */
+  color: white;
+  padding: 40px 20px;
+  font-size: 1rem; /* Default font size for footer */
+  transition: padding 0.3s ease;
+}
+
+footer .social-icons a {
+  color: white;
+  font-size: 1.5rem; /* Larger icons for better visibility */
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #f4f4f4; /* Light gray on hover */
+}
+
+footer .quick-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer .quick-links ul li {
+  margin-bottom: 10px;
+}
+
+footer .quick-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .quick-links ul li a:hover {
+  color: #ffcc00; /* Highlight quick links with yellow */
+}
+
+footer .contact-info p {
+  margin-bottom: 10px;
+}
+
+footer .footer-bottom {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.85rem; /* Default font size for bottom footer */
+}
+
+footer .footer-bottom p {
+  color: white;
+  margin: 0;
+}

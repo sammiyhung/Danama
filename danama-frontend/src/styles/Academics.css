@@ -1,0 +1,129 @@
+/* Hero Section */
+.academics-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+}
+
+.academics-hero h1 {
+  font-size: 2.5rem;
+  color: #0056b3;
+}
+
+.academics-hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Academic Programs */
+.academic-programs {
+  margin-bottom: 50px;
+}
+
+.program-card {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.program-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Curriculum Highlights */
+.curriculum-highlights {
+  margin-bottom: 50px;
+}
+
+.curriculum-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.curriculum-highlights li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.highlight-icon {
+  color: #28a745;
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+/* Extra-Curricular Activities */
+.extra-curricular {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.extra-curricular p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.activity-card {
+  padding: 20px;
+  background: #fdfdfe;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.activity-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Call-to-Action */
+.academics-cta {
+  text-align: center;
+  padding: 30px;
+  background: #0056b3;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.academics-cta h2 {
+  font-size: 2rem;
+}
+
+.academics-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.academics-cta .cta-button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.academics-cta .cta-button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.7), 0 0 15px rgba(255, 75, 43, 0.5);
+  transform: scale(1.05);
+}

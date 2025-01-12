@@ -1,0 +1,83 @@
+/* Base styling */
+html {
+  font-size: 15px; /* Base font size for rem units */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff; /* Default light background */
+  font-size: 1rem; /* Default font size for body text */
+  line-height: 1.6; /* Improve readability */
+  max-width: 100%;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Button Styling */
+button {
+  background-color: #008CBA; /* Sky Blue for buttons */
+  border-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem; /* Use rem for scalability */
+  border-radius: 5px; /* Rounded buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f73; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+/* Responsive Typography */
+@media (max-width: 1200px) {
+  body {
+    font-size: 0.95rem; /* Slightly smaller font size for large tablets and smaller desktops */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Adjust footer font size on medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 0.9rem; /* Adjust font size for tablets */
+  }
+
+  footer {
+    font-size: 0.85rem; /* Further reduce font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.85rem; /* Mobile-first font scaling */
+  }
+
+  footer {
+    font-size: 0.8rem; /* Smaller footer text on mobile */
+  }
+
+  button {
+    font-size: 0.9rem; /* Slightly smaller buttons for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8rem; /* Very small font size for very small screens */
+  }
+
+  footer {
+    font-size: 0.75rem; /* Even smaller footer text for very small screens */
+  }
+}

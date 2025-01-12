@@ -1,0 +1,110 @@
+/* Header.css */
+.navbar-custom {
+  background-color: #ffffff;
+  opacity: 0.9;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* Ensure it stays above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+}
+
+.navbar-custom .navbar-brand {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-nav {
+  display: flex;
+  align-items: center; /* Ensure alignment for all items in the navbar */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: black;
+  font-size: 1rem;
+  margin-right: 20px;
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: red; /* Hover effect with red color */
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #CC0000; /* Text stays red for active link */
+  border-bottom: 3px solid #CC0000; /* Red bottom border for active link */
+}
+
+.toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: black;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.toggle-icon:hover {
+  color: red; /* Hover effect with red color */
+}
+
+.language-selector {
+  display: flex;
+  align-items: center; /* Ensure vertical alignment */
+  margin-left: 20px; /* Add spacing between language selector and other items */
+}
+
+.language-selector .dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the selector */
+  right: 0; /* Align to the right edge of the selector */
+  left: auto; /* Remove any conflicting left positioning */
+  margin-top: 0.25rem; /* Add a small gap between selector and menu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  z-index: 1050; /* Ensure the dropdown is above other elements */
+}
+
+.language-selector .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: black;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.language-selector .dropdown-toggle:hover {
+  color: red; /* Hover effect with red color */
+}
+
+.dropdown-menu {
+  left: auto !important;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-nav {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .toggle-icon {
+    margin-left: 0;
+    margin-top: 10px; /* Add spacing for mobile */
+  }
+
+  .language-selector {
+    margin-left: 0;
+    margin-top: 10px; /* Add spacing for mobile */
+  }
+}

@@ -1,0 +1,146 @@
+:root {
+  --color-primary: #2c3e50; /* Deep flat blue */
+  --color-secondary: #3498db; /* Flat blue */
+  --color-accent: #ecf0f1; /* Light grey */
+  --color-text: #2c3e50; /* Primary text color */
+  --font-family: 'Arial', sans-serif;
+  --font-large: 2rem;
+  --font-medium: 1.5rem;
+  --font-small: 1rem;
+  --spacing-large: 40px;
+  --spacing-medium: 20px;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-large);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-large) 0;
+}
+
+.hero-section h1 {
+  font-size: var(--font-large);
+  margin-bottom: var(--spacing-medium);
+}
+
+.hero-section p {
+  font-size: var(--font-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
+.flat-button {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: var(--font-small);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flat-button:hover {
+  background-color: #1abc9c; /* Flat green */
+  color: white;
+}
+
+/* Countdown Section */
+.countdown-section {
+  padding: var(--spacing-large) 0;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.countdown-block span {
+  font-size: var(--font-large);
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.countdown-block p {
+  font-size: var(--font-small);
+  color: var(--color-secondary);
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: var(--spacing-large) 0;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: var(--font-large);
+  margin-bottom: var(--spacing-medium);
+}
+
+.cta-section .flat-button {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.cta-section .flat-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .countdown-timer {
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .countdown-timer {
+    flex-direction: column;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .flat-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

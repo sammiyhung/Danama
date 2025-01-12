@@ -1,0 +1,175 @@
+/* Hero Section */
+.admissions-hero {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+}
+
+.admissions-hero h1 {
+  font-size: 2.5rem;
+  color: #0056b3;
+}
+
+.admissions-hero p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  margin-bottom: 40px;
+}
+
+.choose-card {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.choose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.choose-icon {
+  font-size: 2.5rem;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Eligibility */
+.eligibility {
+  margin-bottom: 40px;
+}
+
+.eligibility ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.eligibility ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Application Form */
+.application-form {
+  margin-bottom: 40px;
+}
+
+.application-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.application-form form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-neon {
+  padding: 12px 30px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #28a745;
+  background: transparent;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-neon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #28a745;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.button-neon:hover:before {
+  width: 100%;
+}
+
+.button-neon:hover {
+  color: #000;
+  box-shadow: 0 0 15px #28a745, 0 0 30px #28a745;
+  transform: translateY(-3px);
+}
+
+
+/* FAQs */
+.faqs {
+  margin-bottom: 40px;
+}
+
+.faq-card {
+  margin-bottom: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card .card-title {
+  color: #0056b3;
+}
+
+/* Call-to-Action */
+.admissions-cta {
+  text-align: center;
+  padding: 30px;
+  background: #28a745;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.admissions-cta h2 {
+  font-size: 2rem;
+}
+
+.admissions-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.admissions-cta .button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  cursor: pointer;  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.admissions-cta .button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -12,17 +12,15 @@ import Admissions from './pages/Admissions';
 import Events from './pages/Events';
 import EventDetails from './pages/EventDetails';
 import ContactUs from './pages/ContactUs';
-import './i18n';
+import "./i18n";
 import './App.css';
 
 const App = () => {
-  // Initialize dark mode from localStorage if available
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const storedMode = localStorage.getItem('darkMode');
     return storedMode ? JSON.parse(storedMode) : false;
   });
 
-  // Toggle dark mode & persist preference in localStorage
   const toggleDarkMode = () => {
     setIsDarkMode(prevMode => {
       localStorage.setItem('darkMode', JSON.stringify(!prevMode));
@@ -53,7 +51,6 @@ const App = () => {
   );
 };
 
-// Example Preloader Component
 const PreloaderComponent = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();

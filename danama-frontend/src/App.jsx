@@ -3,34 +3,47 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import { Container } from 'react-bootstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Preloader from './components/Preloader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Academics from './pages/Academics';
+import Admin from './pages/Admin';
+import Login from './pages/Login';
 import Admissions from './pages/Admissions';
-import News from './pages/News';
 import Events from './pages/Events';
+import EventDetails from './pages/EventDetails';
 import ContactUs from './pages/ContactUs';
+import './i18n';
 import './App.css';
 
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // Initialize dark mode from localStorage if available
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedMode = localStorage.getItem('darkMode');
+    return storedMode ? JSON.parse(storedMode) : false;
+  });
 
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+  // Toggle dark mode & persist preference in localStorage
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevMode => {
+      localStorage.setItem('darkMode', JSON.stringify(!prevMode));
+      return !prevMode;
+    });
+  };
 
   return (
     <div className={isDarkMode ? 'dark-mode' : ''}>
       <Router>
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        <PreloaderComponent />
         <Container fluid>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/academics" element={<Academics />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/admissions" element={<Admissions />} />
-            <Route path="/news" element={<News />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/events/:eventId" element={<EventDetails />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </Container>
@@ -40,6 +53,7 @@ const App = () => {
   );
 };
 
+// Example Preloader Component
 const PreloaderComponent = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();

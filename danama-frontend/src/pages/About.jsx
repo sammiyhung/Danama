@@ -65,7 +65,63 @@ const About = () => {
           />
         </Col>
       </Row>
-
+      <section className="timeline">
+        <h2>Our Journey</h2>
+        <div className="timeline-items">
+          <div className="timeline-item">
+            <h3>2012</h3>
+            <p>School founded with 10 students.</p>
+          </div>
+          <div className="timeline-item">
+            <h3>2016</h3>
+            <p>Moved to new site.</p>
+          </div>
+          <div className="timeline-item">
+            <h3>2020</h3>
+            <p>Recognized as a top educational institution.</p>
+          </div>
+          <div className="timeline-item">
+            <h3>2022</h3>
+            <p>First graduating alumni students.</p>
+          </div>          
+        </div>
+      </section>
+      
+      <section className="gallery">
+        <h2>Gallery</h2>
+        <div className="gallery-container">
+          <img src="https://cloud.appwrite.io/v1/storage/buckets/6781bd0e001b4881d908/files/67b6a695001a0a50ff5f/view?project=6781bb7b00100ec5b3a0&mode=admin" alt="Event 1" />
+          <img src="https://cloud.appwrite.io/v1/storage/buckets/6781bd0e001b4881d908/files/67b6a6e300369b00debc/view?project=6781bb7b00100ec5b3a0&mode=admin" alt="Event 2" />
+          <img src="https://cloud.appwrite.io/v1/storage/buckets/6781bd0e001b4881d908/files/67b6a6d0000ae2f8b619/view?project=6781bb7b00100ec5b3a0&mode=admin" alt="Event 3" />
+          <img src="https://cloud.appwrite.io/v1/storage/buckets/6781bd0e001b4881d908/files/67b6a6bb003767809b8e/view?project=6781bb7b00100ec5b3a0&mode=admin" alt="Event 4" />
+          <img src="https://cloud.appwrite.io/v1/storage/buckets/6781bd0e001b4881d908/files/67b6a6860021d134a74e/view?project=6781bb7b00100ec5b3a0&mode=admin" alt="Event 5" />
+        </div>
+      </section>
+      
+      <section className="virtual-tour">
+        <h2>Virtual Tour</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/samplevideo"
+          title="Virtual Tour"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </section>
+      
+      <section className="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>What are the admission requirements?</summary>
+          <p>Students must pass an entrance exam and interview.</p>
+        </details>
+        <details>
+          <summary>Are scholarships available?</summary>
+          <p>Yes, we offer merit-based and financial aid scholarships.</p>
+        </details>
+      </section>
+      
       {/* Meet Our Team Section */}
       <section className="team-section">
         <h2>Meet Our Pioneers</h2>

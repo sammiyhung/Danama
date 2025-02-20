@@ -1,6 +1,5 @@
 /* Base Styling */
 .about-container {
-  font-family: 'Poppins', sans-serif;
   padding: 40px 20px;
   line-height: 1.6;
   color: #333;
@@ -305,5 +304,88 @@
   .history-section img {
     max-width: 80%; /* Ensure image doesn't overflow */
     margin-top: 20px;
+  }
+}
+
+/* Interactive Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 40px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Virtual Tour Video */
+.virtual-tour {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.virtual-tour iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+/* FAQ */
+.faq {
+  margin-top: 40px;
+}
+
+.faq details {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.faq details:hover {
+  background: #eaeaea;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .programs-section, .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .virtual-tour iframe {
+    height: 300px;
   }
 }

@@ -16,7 +16,7 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-  color: #f4f4f4; /* Light gray on hover */
+  color: #0000ff; /* Light gray on hover */
 }
 
 footer .quick-links ul {
@@ -25,7 +25,7 @@ footer .quick-links ul {
 }
 
 footer .quick-links ul li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 footer .quick-links ul li a {
@@ -37,8 +37,12 @@ footer .quick-links ul li a:hover {
   color: #ffcc00; /* Highlight quick links with yellow */
 }
 
+footer .contact-info, .quick-links, .social-icons, h5 {
+  margin-top: 5px;
+}
+
 footer .contact-info p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 footer .footer-bottom {
@@ -49,5 +53,5 @@ footer .footer-bottom {
 
 footer .footer-bottom p {
   color: white;
-  margin: 0;
+  margin-top: 20px;
 }

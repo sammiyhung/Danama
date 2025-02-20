@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Arial', sans-serif;
   padding: 0;
   margin: 0;
   background-color: #ffffff; /* Default light background */
@@ -17,6 +17,18 @@ body {
 .dark-mode {
   background-color: #121212;
   color: white;
+}
+
+.dark-mode p {
+  color: white;
+}
+
+.dark-mode .course-card {
+  background-color: #090909;
+}
+
+.dark-mode .subject-box {
+  background-color: #090909;
 }
 
 /* Button Styling */

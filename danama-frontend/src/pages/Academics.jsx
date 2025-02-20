@@ -74,13 +74,6 @@ const Academics = () => {
               </li>
             </ul>
           </Col>
-          <Col md={6}>
-            <img
-              src="https://via.placeholder.com/500x300?text=Curriculum+Highlights"
-              alt="Curriculum Highlights"
-              className="img-fluid"
-            />
-          </Col>
         </Row>
       </section>
 
@@ -95,7 +88,7 @@ const Academics = () => {
             <Card className="activity-card">
               <Card.Body>
                 <Card.Title>Sports Teams</Card.Title>
-                <Card.Text>Soccer, basketball, track, and more to encourage fitness and teamwork.</Card.Text>
+                <Card.Text>Soccer, volleyball, track, and more to encourage fitness and teamwork.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
